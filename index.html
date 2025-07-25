@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Piñatería Caracas - Catálogo</title>
+    <title>Piñatería Caracas - Catálogo</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -40,13 +40,37 @@
         .border-pink {
             border-color: #ff80ab;
         }
+
+        /* Estilos para el botón de Volver Arriba */
+        #scrollTopBtn {
+            display: none; /* Oculto por defecto */
+            position: fixed; /* Posición fija */
+            bottom: 20px; /* 20px desde la parte inferior */
+            right: 30px; /* 30px desde la derecha */
+            z-index: 99; /* Asegura que esté por encima de otros elementos */
+            border: none; /* Sin borde */
+            outline: none; /* Sin contorno al hacer clic */
+            background-color: #ff80ab; /* Color de fondo festivo */
+            color: white; /* Color del texto */
+            cursor: pointer; /* Cursor de mano al pasar por encima */
+            padding: 15px; /* Relleno */
+            border-radius: 50%; /* Forma circular */
+            font-size: 18px; /* Tamaño de fuente */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+            transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+        }
+
+        #scrollTopBtn:hover {
+            background-color: #d81b60; /* Color de fondo al pasar el ratón */
+            transform: scale(1.1); /* Ligeramente más grande al pasar el ratón */
+        }
     </style>
 </head>
 <body class="antialiased">
     <div class="min-h-screen flex flex-col">
         <!-- Sección de Encabezado -->
         <header class="header-bg text-white py-8 text-center rounded-b-lg shadow-md">
-            <h1 class="text-5xl font-extrabold mb-2"> Piñatería Caracas (Doña Cos)</h1>
+            <h1 class="text-5xl font-extrabold mb-2">Piñatería Caracas</h1>
             <p class="text-2xl font-semibold">¡Tu Fiesta Comienza Aquí!</p>
         </header>
 
@@ -55,7 +79,7 @@
             <!-- Sección de Bienvenida -->
             <section class="mb-12 text-center">
                 <p class="text-lg leading-relaxed max-w-3xl mx-auto rounded-lg p-6 card-bg">
-                    ¡Bienvenidos a Piñatería Caracas ! Somos expertos en crear las piñatas más divertidas y originales para tus celebraciones. Con más de 40 años de experiencia en diseño, elaboración y producción de piñatas, ofrecemos una amplia variedad de diseños para todas las edades y temáticas.
+                    ¡Bienvenidos a Piñatería Caracas! Somos expertos en crear las piñatas más divertidas y originales para tus celebraciones. Con más de 40 años de experiencia en diseño, elaboración y producción de piñatas, ofrecemos una amplia variedad de diseños para todas las edades y temáticas.
                 </p>
             </section>
 
@@ -67,6 +91,12 @@
                 </p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Tarjeta de Piñata: Temática Jungla - ¡NUEVA! -->
+                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
+                        <img src="https://imgur.com/FcAyfZW.jpeg" alt="Piñata Temática Jungla" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
+                        <h3 class="text-xl font-semibold mb-2">Temática Jungla</h3>
+                        <p class="text-gray-700 text-sm">Una piñata con forma del número 1, decorada con motivos de jungla y animales como una cebra, jirafa y león. ¡Perfecta para el primer cumpleaños de Ángel!</p>
+                    </div>
                     <!-- Tarjeta de Piñata: Sonic -->
                     <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
                         <img src="https://i.imgur.com/EjJ9s7W.jpeg" alt="Piñata de Sonic the Hedgehog" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
@@ -228,7 +258,7 @@
                 <h2 class="text-4xl font-bold section-title text-center mb-8">Sobre Nosotros</h2>
                 <div class="card-bg rounded-lg shadow-lg p-6 max-w-4xl mx-auto text-center">
                     <p class="text-lg leading-relaxed mb-4">
-                        Piñateria Caracas es una empresa establecida desde hace más de 40 años, con amplia experiencia en el diseño, elaboración y producción de piñatas.
+                        Piñatería Caracas es una empresa establecida desde hace más de 40 años, con amplia experiencia en el diseño, elaboración y producción de piñatas.
                     </p>
                     <p class="text-lg leading-relaxed mb-4">
                         También nos dedicamos a la venta de globos y somos socios comerciales de supermercados en China. Nuestros productos cumplen con las pruebas EN 71 (partes 1, 2, 3, 9 y 12), ASTM, CPSIA y "Prop 65".
@@ -253,7 +283,7 @@
                         <strong class="text-pink-700">Web:</strong> <a href="https://doñacos.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://doñacos.com/</a>
                     </p>
                     <p class="text-lg mb-4">
-                        <strong class="text-pink-700">Dirección:</strong> Piñateria Caracas, Calle El Colegio, Edificio Valencia Pb, Prado de María, Caracas, 1040
+                        <strong class="text-pink-700">Dirección:</strong> Calle El Colegio, Edificio Valencia Pb, Prado de María, Caracas, 1040
                     </p>
 
                     <h3 class="text-2xl font-semibold mb-4 text-pink-700">Encuéntranos en el Mapa</h3>
@@ -267,11 +297,11 @@
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"
-                            title="Ubicación de Doña Cos Piñatería en Google Maps"
+                            title="Ubicación de Piñatería Caracas en Google Maps"
                         ></iframe>
                     </div>
                     <p class="text-sm text-gray-600 mt-2">
-                        Aqui estamos, facil, rapido y sin perdidas
+                        El mapa muestra un marcador en la dirección proporcionada. Si deseas que aparezca el nombre de tu negocio directamente en el mapa, te recomendamos registrarlo en Google My Business.
                     </p>
                 </div>
             </section>
@@ -281,6 +311,32 @@
         <footer class="header-bg text-white py-6 text-center rounded-t-lg shadow-md mt-8">
             <p>&copy; 2025 Piñatería Caracas. Todos los derechos reservados.</p>
         </footer>
+
+        <!-- Botón de Volver Arriba -->
+        <button onclick="topFunction()" id="scrollTopBtn" title="Volver Arriba">↑</button>
+
+        <!-- Script para el botón de Volver Arriba -->
+        <script>
+            // Obtener el botón
+            let mybutton = document.getElementById("scrollTopBtn");
+
+            // Cuando el usuario se desplaza 20px hacia abajo desde la parte superior del documento, muestra el botón
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // Cuando el usuario hace clic en el botón, se desplaza hacia la parte superior del documento
+            function topFunction() {
+                document.body.scrollTop = 0; // Para Safari
+                document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+            }
+        </script>
     </div>
 </body>
 </html>
