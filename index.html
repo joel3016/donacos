@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doña Cos Piñatería - Catálogo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales para el cuerpo del documento */
+        body {
+            font-family: 'Inter', sans-serif; /* Fuente principal */
+            background-color: #fce4ec; /* Color de fondo rosa claro para un toque festivo */
+            color: #333; /* Color de texto oscuro */
+        }
+        /* Estilos para el encabezado */
+        .header-bg {
+            background-color: #ff80ab; /* Color de fondo rosa vibrante */
+        }
+        /* Estilos para los títulos de sección */
+        .section-title {
+            color: #d81b60; /* Color rojo oscuro para los títulos */
+        }
+        /* Estilos para las tarjetas de contenido */
+        .card-bg {
+            background-color: #fff; /* Fondo blanco */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        /* Estilos para botones primarios (si se añaden en el futuro) */
+        .btn-primary {
+            background-color: #d81b60;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ad1457;
+        }
+        /* Estilos para bordes rosas */
+        .border-pink {
+            border-color: #ff80ab;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Sección de Encabezado -->
+        <header class="header-bg text-white py-8 text-center rounded-b-lg shadow-md">
+            <h1 class="text-5xl font-extrabold mb-2">Doña Cos Piñatería</h1>
+            <p class="text-2xl font-semibold">¡Tu Fiesta Comienza Aquí!</p>
+        </header>
+
+        <!-- Contenido Principal -->
+        <main class="container mx-auto px-4 py-8 flex-grow">
+            <!-- Sección de Bienvenida -->
+            <section class="mb-12 text-center">
+                <p class="text-lg leading-relaxed max-w-3xl mx-auto rounded-lg p-6 card-bg">
+                    ¡Bienvenidos a Doña Cos Piñatería! Somos expertos en crear las piñatas más divertidas y originales para tus celebraciones. Con más de 40 años de experiencia en diseño, elaboración y producción de piñatas, ofrecemos una amplia variedad de diseños para todas las edades y temáticas.
+                </p>
+            </section>
+
+            <!-- Sección de Piñatas Temáticas -->
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold section-title text-center mb-8">Piñatas Temáticas Personalizadas</h2>
+                <p class="text-lg text-center mb-10 max-w-2xl mx-auto">
+                    En Doña Cos, podemos hacer realidad la piñata de tus sueños. Mira algunos de nuestros diseños más populares:
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <!-- Tarjeta de Piñata: Sonic -->
+                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
+                        <img src="https://i.imgur.com/EjJ9s7W.jpeg" alt="Piñata de Sonic the Hedgehog" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
+                        <h3 class="text-xl font-semibold mb-2">Sonic the Hedgehog</h3>
+                        <p class="text-gray-700 text-sm">La piñata perfecta para los amantes de la velocidad y los videojuegos. ¡Con todos los detalles de tu erizo favorito!</p>
+                    </div>
+                    <!-- Tarjeta de Piñata: Avengers -->
+                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
+                        <img src="https://i.imgur.com/MXgVE2O.jpeg" alt="Piñata de Avengers" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
+                        <h3 class="text-xl font-semibold mb-2">Avengers</h3>
+                        <p class="text-gray-700 text-sm">Una piñata redonda con los emblemas de los superhéroes más icónicos: Capitán América, Hulk, Spider-Man, Iron Man y el logo de Avengers.</p>
+                    </div>
+                    <!-- Tarjeta de Piñata: Harry Potter Número 6 -->
+                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
+                        <img src="https://i.imgur.com/jrkvkb1.jpeg" alt="Piñata de Harry Potter Número 6" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
+                        <h3 class="text-xl font-semibold mb-2">Harry Potter Número 6</h3>
+                        <p class="text-gray-700 text-sm">Ideal para celebrar un sexto cumpleaños mágico, con Harry, Ron y Hermione, y el logo de HP.</p>
+                    </div>
+                    <!-- Tarjeta de Piñata: Princesa Miranda -->
+                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
+                        <img src="https://i.imgur.com/U6olkei.jpeg" alt="Piñata de Princesa Miranda" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
+                        <h3 class="text-xl font-semibold mb-2">Princesa Miranda</h3>
+                        <p class="text-gray-700 text-sm">Un diseño elegante y personalizado con una corona brillante y el nombre "Miranda".</p>
+                    </div>
+                    <!-- Tarjeta de Piñata: Isabela Madrigal (Encanto) -->
+                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
+                        <img src="https://i.imgur.com/3o7zIXw.jpeg" alt="Piñata de Isabela Madrigal (Encanto)" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
+                        <h3 class="text-xl font-semibold mb-2">Isabela Madrigal (Encanto)</h3>
+                        <p class="text-gray-700 text-sm">Una hermosa piñata de la personaje con su distintivo vestido morado y detalles florales.</p>
+                    </div>
+                    <!-- Tarjeta de Piñata: Elsa (Frozen) -->
+                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
+                        <img src="https://i.imgur.com/IsCgiFW.jpeg" alt="Piñata de Elsa (Frozen)" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
+                        <h3 class="text-xl font-semibold mb-2">Elsa (Frozen)</h3>
+                        <p class="text-gray-700 text-sm">La Reina de las Nieves lista para traer magia a tu fiesta con su vestido azul brillante.</p>
+                    </div>
+                    <!-- Tarjeta de Piñata: Chibi Elsa -->
+                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
+                        <img src="https://i.imgur.com/Hxn2iSW.jpeg" alt="Piñata de Elsa Chibi" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
+                        <h3 class="text-xl font-semibold mb-2">Elsa Chibi</h3>
+                        <p class="text-gray-700 text-sm">Una versión adorable y compacta de Elsa, perfecta para los más pequeños.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Decoración y Accesorios para Fiesta -->
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold section-title text-center mb-8">Decoración y Accesorios para Fiesta</h2>
+                <p class="text-lg text-center mb-10 max-w-2xl mx-auto">
+                    Además de nuestras piñatas, te ofrecemos una variedad de globos para complementar tu celebración, de alta calidad y fabricados por Feng Che® Windmill Balloon:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Tarjeta: Globos de Color Mate -->
+                    <div class="card-bg rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-pink-700">Globos de Color Mate</h3>
+                        <p class="mb-2">Disponibles en tamaños de 5, 10, 12, 18 y 36 pulgadas. Algunos de los colores que puedes encontrar son:</p>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Rojo TN (S52)</li>
+                            <li>Rojo Caliente (S57)</li>
+                            <li>Naranja (S9)</li>
+                            <li>Amarillo (S55)</li>
+                            <li>Verde Menta (S6)</li>
+                            <li>Azul Bebé (S3)</li>
+                            <li>Negro (S18)</li>
+                            <li>Blanco (S13)</li>
+                        </ul>
+                        <!-- Marcador de posición para imagen de Globos Mate - reemplaza con URL real si la tienes -->
+                        <img src="https://placehold.co/400x200/ffc0cb/000?text=Globos+Mate" alt="Globos de Color Mate" class="mt-4 rounded-md border border-pink">
+                    </div>
+
+                    <!-- Tarjeta: Globos de Color Perla -->
+                    <div class="card-bg rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-pink-700">Globos de Color Perla</h3>
+                        <p class="mb-2">Disponibles en tamaños de 5, 10, 12, 18 y 36 pulgadas. Algunos de los colores son:</p>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Blanco (M30)</li>
+                            <li>Oro Rosa (M70)</li>
+                            <li>Melocotón (M27)</li>
+                            <li>Oro (M37)</li>
+                            <li>Azul Claro (M22)</li>
+                            <li>Plata (M36)</li>
+                        </ul>
+                        <!-- Marcador de posición para imagen de Globos Perla - reemplaza con URL real si la tienes -->
+                        <img src="https://placehold.co/400x200/ffebcd/000?text=Globos+Perla" alt="Globos de Color Perla" class="mt-4 rounded-md border border-pink">
+                    </div>
+
+                    <!-- Tarjeta: Globos Retro -->
+                    <div class="card-bg rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-pink-700">Globos Retro</h3>
+                        <p class="mb-2">Disponibles en tamaños de 5, 10, 12, 18 y 36 pulgadas. Algunos de los colores incluyen:</p>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Granate (575)</li>
+                            <li>Rosa Palo (580)</li>
+                            <li>Rubor (582)</li>
+                            <li>Verde Aguacate (581)</li>
+                            <li>Azul Marino (572)</li>
+                            <li>Café (565)</li>
+                            <li>Coral (574)</li>
+                            <li>Naranja Caramelo (594)</li>
+                            <li>Rosa Cálido (S90)</li>
+                            <li>Albaricoque (589)</li>
+                            <li>Arena Blanca (588)</li>
+                            <li>Matcha (S95)</li>
+                            <li>Púrpura Taro (598)</li>
+                            <li>Púrpura Claro (599)</li>
+                            <li>Camel (592)</li>
+                            <li>Fucsia Cristal (305)</li>
+                            <li>Chocolate Cristal (306)</li>
+                        </ul>
+                        <!-- Marcador de posición para imagen de Globos Retro - reemplaza con URL real si la tienes -->
+                        <img src="https://placehold.co/400x200/d4a7b5/000?text=Globos+Retro" alt="Globos Retro" class="mt-4 rounded-md border border-pink">
+                    </div>
+
+                    <!-- Tarjeta: Otros Tipos de Globos -->
+                    <div class="card-bg rounded-lg shadow-lg p-6">
+                        <h3 class="text-2xl font-semibold mb-4 text-pink-700">Otros Tipos de Globos</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Globos Macaron Pastel</li>
+                            <li>Globos Metálicos Cromados</li>
+                            <li>Globos de Confeti</li>
+                            <li>Globos para Revelación de Género</li>
+                            <li>Globos Impresos (personalizables con tu logo)</li>
+                            <li>Globos Mágicos</li>
+                            <li>Globos de Agua</li>
+                            <li>Kits de Guirnaldas de Globos</li>
+                            <li>Globos Mármol</li>
+                            <li>Globos de Corazón</li>
+                            <li>Globos Link</li>
+                            <li>Globos Punch</li>
+                            <li>Globos Espirales</li>
+                            <li>Globos de Aluminio (Foil)</li>
+                            <li>Globos Bobo LED</li>
+                        </ul>
+                        <!-- Marcador de posición para imagen de Otros Globos - reemplaza con URL real si la tienes -->
+                        <img src="https://placehold.co/400x200/c5e1a5/000?text=Otros+Globos" alt="Otros Tipos de Globos" class="mt-4 rounded-md border border-pink">
+                    </div>
+
+                    <!-- Tarjeta: Accesorios para Globos -->
+                    <div class="card-bg rounded-lg shadow-lg p-6 md:col-span-2">
+                        <h3 class="text-2xl font-semibold mb-4 text-pink-700">Accesorios para Globos</h3>
+                        <p class="mb-2">También ofrecemos accesorios para globos como:</p>
+                        <ul class="list-disc list-inside grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-gray-700">
+                            <li>Cintas</li>
+                            <li>Copas y palos</li>
+                            <li>Líneas de pesca</li>
+                            <li>Puntos de pegamento</li>
+                            <li>Bombas eléctricas y manuales</li>
+                            <li>Nudadores</li>
+                        </ul>
+                        <!-- Marcador de posición para imagen de Accesorios Globos - reemplaza con URL real si la tienes -->
+                        <img src="https://placehold.co/600x200/b3e5fc/000?text=Accesorios+Globos" alt="Accesorios para Globos" class="mt-4 rounded-md border border-pink">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Sobre Nosotros -->
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold section-title text-center mb-8">Sobre Nosotros</h2>
+                <div class="card-bg rounded-lg shadow-lg p-6 max-w-4xl mx-auto text-center">
+                    <p class="text-lg leading-relaxed mb-4">
+                        Doña Cos es una empresa establecida desde hace más de 40 años, con amplia experiencia en el diseño, elaboración y producción de piñatas.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        También nos dedicamos a la venta de globos y somos socios comerciales de supermercados en China. Nuestros productos cumplen con las pruebas EN 71 (partes 1, 2, 3, 9 y 12), ASTM, CPSIA y "Prop 65".
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Contamos con más de 10 empleados y una sólida capacidad de producción de piñatas y globos, ofreciendo todo lo necesario para tu fiesta. Todos nuestros productos son 100% látex natural biodegradable.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Sección de Contacto -->
+            <section class="mb-12">
+                <h2 class="text-4xl font-bold section-title text-center mb-8">Contacto</h2>
+                <div class="card-bg rounded-lg shadow-lg p-6 max-w-2xl mx-auto text-center">
+                    <p class="text-lg mb-2">
+                        <strong class="text-pink-700">Tel/WhatsApp/WeChat:</strong> <a href="tel:+584143061492" class="text-blue-600 hover:underline">+58 4143061492</a>
+                    </p>
+                    <p class="text-lg mb-2">
+                        <strong class="text-pink-700">Correo Electrónico:</strong> <a href="mailto:donacos@gmail.com" class="text-blue-600 hover:underline">doñacos@gmail.com</a>
+                    </p>
+                    <p class="text-lg mb-2">
+                        <strong class="text-pink-700">Web:</strong> <a href="https://doñacos.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://doñacos.com/</a>
+                    </p>
+                    <p class="text-lg">
+                        <strong class="text-pink-700">Dirección:</strong> Prado de María, Caracas, 1040
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de Página -->
+        <footer class="header-bg text-white py-6 text-center rounded-t-lg shadow-md mt-8">
+            <p>&copy; 2025 Doña Cos Piñatería. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
