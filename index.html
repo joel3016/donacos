@@ -89,7 +89,7 @@
             width: 100%; /* Cada imagen ocupa todo el ancho del carrusel */
             min-width: 100%; /* Asegura que la imagen siempre ocupe el 100% del ancho del slide */
             height: 100%; /* Cada imagen ocupa toda la altura del carrusel */
-            object-fit: contain; /* CAMBIADO: Recorta la imagen para que abarque todo el cuadro, manteniendo la proporción */
+            object-fit: contain; /* Recorta la imagen para que abarque todo el cuadro, manteniendo la proporción */
             background-color: #fff; /* Fondo blanco para el padding */
             box-sizing: border-box; /* Incluye padding en el ancho/alto */
             /* Eliminado border-radius y padding directo para que object-fit: contain funcione mejor sin bordes internos */
@@ -168,14 +168,13 @@
 
                 <div class="carousel-container">
                     <div class="carousel-slide" id="pinata-carousel-slide">
-                        <img src="https://imgur.com/FcAyfZW.jpeg" alt="Piñata Temática Jungla">
-                        <img src="https://i.imgur.com/EjJ9s7W.jpeg" alt="Piñata de Sonic the Hedgehog">
-                        <img src="https://i.imgur.com/MXgVE2O.jpeg" alt="Piñata de Avengers">
-                        <img src="https://i.imgur.com/jrkvkb1.jpeg" alt="Piñata de Harry Potter Número 6">
-                        <img src="https://i.imgur.com/U6olkei.jpeg" alt="Piñata de Princesa Miranda">
-                        <img src="https://i.imgur.com/3o7zIXw.jpeg" alt="Piñata de Isabela Madrigal (Encanto)">
-                        <img src="https://i.imgur.com/IsCgiFW.jpeg" alt="Piñata de Elsa (Frozen)">
-                        <img src="https://i.imgur.com/Hxn2iSW.jpeg" alt="Piñata de Elsa Chibi">
+                        <img src="https://i.imgur.com/ck7bufT.jpeg" alt="Piñata de Stitch" onerror="this.onerror=null;this.src='https://placehold.co/800x450/ffc0cb/000?text=Imagen+no+disponible'">
+                        <img src="https://i.imgur.com/v1V7ODl.jpeg" alt="Piñata de Paw Patrol" onerror="this.onerror=null;this.src='https://placehold.co/800x450/ffc0cb/000?text=Imagen+no+disponible'">
+                        <img src="https://i.imgur.com/sDOVzI8.jpeg" alt="Piñata de Mickey Mouse" onerror="this.onerror=null;this.src='https://placehold.co/800x450/ffc0cb/000?text=Imagen+no+disponible'">
+                        <img src="https://i.imgur.com/qXQs7Lr.jpeg" alt="Piñata de Minnie Mouse" onerror="this.onerror=null;this.src='https://placehold.co/800x450/ffc0cb/000?text=Imagen+no+disponible'">
+                        <img src="https://i.imgur.com/69EHaUW.jpeg" alt="Piñata de Spiderman" onerror="this.onerror=null;this.src='https://placehold.co/800x450/ffc0cb/000?text=Imagen+no+disponible'">
+                        <img src="https://i.imgur.com/2sFSHHf.jpeg" alt="Piñata de Batman" onerror="this.onerror=null;this.src='https://placehold.co/800x450/ffc0cb/000?text=Imagen+no+disponible'">
+                        <img src="https://i.imgur.com/vXsQdBl.jpeg" alt="Piñata de Superman" onerror="this.onerror=null;this.src='https://placehold.co/800x450/ffc0cb/000?text=Imagen+no+disponible'">
                     </div>
                     <button class="carousel-button prev" onclick="moveSlide('pinata-carousel-slide', -1)">&#10094;</button>
                     <button class="carousel-button next" onclick="moveSlide('pinata-carousel-slide', 1)">&#10095;</button>
@@ -191,11 +190,11 @@
 
                 <div class="carousel-container">
                     <div class="carousel-slide" id="globos-carousel-slide">
-                        <img src="https://placehold.co/800x450/ffc0cb/000?text=Globos+Mate" alt="Globos de Color Mate">
-                        <img src="https://placehold.co/800x450/ffebcd/000?text=Globos+Perla" alt="Globos de Color Perla">
-                        <img src="https://placehold.co/800x450/d4a7b5/000?text=Globos+Retro" alt="Globos Retro">
-                        <img src="https://placehold.co/800x450/c5e1a5/000?text=Otros+Globos" alt="Otros Tipos de Globos">
-                        <img src="https://placehold.co/800x450/b3e5fc/000?text=Accesorios+Globos" alt="Accesorios para Globos">
+                        <img src="https://placehold.co/800x450/ffc0cb/000?text=Globos+Mate" alt="Globos de Color Mate" onerror="this.onerror=null;this.src='https://placehold.co/800x450/ffc0cb/000?text=Imagen+no+disponible'">
+                        <img src="https://placehold.co/800x450/ffebcd/000?text=Globos+Perla" alt="Globos de Color Perla" onerror="this.onerror=null;this.src='https://placehold.co/800x450/ffebcd/000?text=Imagen+no+disponible'">
+                        <img src="https://placehold.co/800x450/d4a7b5/000?text=Globos+Retro" alt="Globos Retro" onerror="this.onerror=null;this.src='https://placehold.co/800x450/d4a7b5/000?text=Imagen+no+disponible'">
+                        <img src="https://placehold.co/800x450/c5e1a5/000?text=Otros+Globos" alt="Otros Tipos de Globos" onerror="this.onerror=null;this.src='https://placehold.co/800x450/c5e1a5/000?text=Imagen+no+disponible'">
+                        <img src="https://placehold.co/800x450/b3e5fc/000?text=Accesorios+Globos" alt="Accesorios para Globos" onerror="this.onerror=null;this.src='https://placehold.co/800x450/b3e5fc/000?text=Imagen+no+disponible'">
                     </div>
                     <button class="carousel-button prev" onclick="moveSlide('globos-carousel-slide', -1)">&#10094;</button>
                     <button class="carousel-button next" onclick="moveSlide('globos-carousel-slide', 1)">&#10095;</button>
