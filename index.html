@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piñatería Caracas - Catálogo</title>
+    <title>Piñatería Caracas | Tu Fiesta Comienza Aquí</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -64,6 +64,82 @@
             background-color: #d81b60; /* Color de fondo al pasar el ratón */
             transform: scale(1.1); /* Ligeramente más grande al pasar el ratón */
         }
+
+        /* ESTILOS DEL CARRUSEL */
+        .carousel-container {
+            position: relative;
+            max-width: 800px; /* Ancho máximo del carrusel, ajustado para el diseño de tarjetas */
+            height: 300px; /* Altura fija para el carrusel */
+            margin: 40px auto;
+            overflow: hidden; /* Oculta las imágenes fuera de vista */
+            border-radius: 12px; /* Bordes redondeados */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+            background-color: #f8e0f0; /* Fondo rosa claro para el contenedor del carrusel */
+            border: 2px solid #ff80ab; /* Borde rosa */
+        }
+
+        .carousel-slide {
+            display: flex;
+            height: 100%;
+            transition: transform 0.5s ease-in-out; /* Transición suave para el movimiento */
+        }
+
+        .carousel-slide img {
+            flex-shrink: 0; /* Evita que las imágenes se encojan */
+            width: 100%; /* Cada imagen ocupa todo el ancho del carrusel */
+            height: 100%; /* Cada imagen ocupa toda la altura del carrusel */
+            object-fit: cover; /* Recorta la imagen para que abarque todo el cuadro */
+            border-radius: 10px; /* Bordes redondeados para las imágenes */
+            padding: 5px; /* Pequeño padding interno para el borde visual */
+            background-color: #fff; /* Fondo blanco para el padding */
+            box-sizing: border-box; /* Incluye padding en el ancho/alto */
+        }
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 128, 171, 0.7); /* Rosa semitransparente */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1.5em;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            z-index: 10; /* Asegura que los botones estén sobre las imágenes */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-button:hover {
+            background-color: #d81b60; /* Rosa más oscuro al pasar el mouse */
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-button.prev {
+            left: 10px;
+        }
+
+        .carousel-button.next {
+            right: 10px;
+        }
+
+        /* Responsive adjustments for carousel */
+        @media (max-width: 768px) {
+            .carousel-container {
+                height: 250px; /* Altura más pequeña en móviles */
+            }
+            .carousel-button {
+                padding: 8px 12px;
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-container {
+                height: 200px; /* Altura aún más pequeña en móviles muy pequeños */
+            }
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -83,73 +159,50 @@
                 </p>
             </section>
 
-            <!-- Sección de Piñatas Temáticas -->
+            <!-- Sección de Piñatas Temáticas con Carrusel -->
             <section class="mb-12">
                 <h2 class="text-4xl font-bold section-title text-center mb-8">Piñatas Temáticas Personalizadas</h2>
                 <p class="text-lg text-center mb-10 max-w-2xl mx-auto">
                     En Piñatería Caracas, podemos hacer realidad la piñata de tus sueños. Mira algunos de nuestros diseños más populares:
                 </p>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <!-- Tarjeta de Piñata: Temática Jungla - ¡NUEVA! -->
-                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
-                        <img src="https://imgur.com/FcAyfZW.jpeg" alt="Piñata Temática Jungla" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
-                        <h3 class="text-xl font-semibold mb-2">Temática Jungla</h3>
-                        <p class="text-gray-700 text-sm">Una piñata con forma del número 1, decorada con motivos de jungla y animales como una cebra, jirafa y león. ¡Perfecta para el primer cumpleaños de Ángel!</p>
+                <div class="carousel-container">
+                    <div class="carousel-slide" id="pinata-carousel-slide">
+                        <img src="https://imgur.com/FcAyfZW.jpeg" alt="Piñata Temática Jungla">
+                        <img src="https://i.imgur.com/EjJ9s7W.jpeg" alt="Piñata de Sonic the Hedgehog">
+                        <img src="https://i.imgur.com/MXgVE2O.jpeg" alt="Piñata de Avengers">
+                        <img src="https://i.imgur.com/jrkvkb1.jpeg" alt="Piñata de Harry Potter Número 6">
+                        <img src="https://i.imgur.com/U6olkei.jpeg" alt="Piñata de Princesa Miranda">
+                        <img src="https://i.imgur.com/3o7zIXw.jpeg" alt="Piñata de Isabela Madrigal (Encanto)">
+                        <img src="https://i.imgur.com/IsCgiFW.jpeg" alt="Piñata de Elsa (Frozen)">
+                        <img src="https://i.imgur.com/Hxn2iSW.jpeg" alt="Piñata de Elsa Chibi">
                     </div>
-                    <!-- Tarjeta de Piñata: Sonic -->
-                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
-                        <img src="https://i.imgur.com/EjJ9s7W.jpeg" alt="Piñata de Sonic the Hedgehog" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
-                        <h3 class="text-xl font-semibold mb-2">Sonic the Hedgehog</h3>
-                        <p class="text-gray-700 text-sm">La piñata perfecta para los amantes de la velocidad y los videojuegos. ¡Con todos los detalles de tu erizo favorito!</p>
-                    </div>
-                    <!-- Tarjeta de Piñata: Avengers -->
-                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
-                        <img src="https://i.imgur.com/MXgVE2O.jpeg" alt="Piñata de Avengers" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
-                        <h3 class="text-xl font-semibold mb-2">Avengers</h3>
-                        <p class="text-gray-700 text-sm">Una piñata redonda con los emblemas de los superhéroes más icónicos: Capitán América, Hulk, Spider-Man, Iron Man y el logo de Avengers.</p>
-                    </div>
-                    <!-- Tarjeta de Piñata: Harry Potter Número 6 -->
-                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
-                        <img src="https://i.imgur.com/jrkvkb1.jpeg" alt="Piñata de Harry Potter Número 6" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
-                        <h3 class="text-xl font-semibold mb-2">Harry Potter Número 6</h3>
-                        <p class="text-gray-700 text-sm">Ideal para celebrar un sexto cumpleaños mágico, con Harry, Ron y Hermione, y el logo de HP.</p>
-                    </div>
-                    <!-- Tarjeta de Piñata: Princesa Miranda -->
-                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
-                        <img src="https://i.imgur.com/U6olkei.jpeg" alt="Piñata de Princesa Miranda" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
-                        <h3 class="text-xl font-semibold mb-2">Princesa Miranda</h3>
-                        <p class="text-gray-700 text-sm">Un diseño elegante y personalizado con una corona brillante y el nombre "Miranda".</p>
-                    </div>
-                    <!-- Tarjeta de Piñata: Isabela Madrigal (Encanto) -->
-                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
-                        <img src="https://i.imgur.com/3o7zIXw.jpeg" alt="Piñata de Isabela Madrigal (Encanto)" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
-                        <h3 class="text-xl font-semibold mb-2">Isabela Madrigal (Encanto)</h3>
-                        <p class="text-gray-700 text-sm">Una hermosa piñata de la personaje con su distintivo vestido morado y detalles florales.</p>
-                    </div>
-                    <!-- Tarjeta de Piñata: Elsa (Frozen) -->
-                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
-                        <img src="https://i.imgur.com/IsCgiFW.jpeg" alt="Piñata de Elsa (Frozen)" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
-                        <h3 class="text-xl font-semibold mb-2">Elsa (Frozen)</h3>
-                        <p class="text-gray-700 text-sm">La Reina de las Nieves lista para traer magia a tu fiesta con su vestido azul brillante.</p>
-                    </div>
-                    <!-- Tarjeta de Piñata: Chibi Elsa -->
-                    <div class="card-bg rounded-lg overflow-hidden shadow-lg p-4 flex flex-col items-center text-center">
-                        <img src="https://i.imgur.com/Hxn2iSW.jpeg" alt="Piñata de Elsa Chibi" class="w-full h-48 object-contain mb-4 rounded-md border border-pink p-2">
-                        <h3 class="text-xl font-semibold mb-2">Elsa Chibi</h3>
-                        <p class="text-gray-700 text-sm">Una versión adorable y compacta de Elsa, perfecta para los más pequeños.</p>
-                    </div>
+                    <button class="carousel-button prev" onclick="moveSlide('pinata-carousel-slide', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveSlide('pinata-carousel-slide', 1)">&#10095;</button>
                 </div>
             </section>
 
-            <!-- Sección de Decoración y Accesorios para Fiesta -->
+            <!-- Sección de Decoración y Accesorios para Fiesta con Carrusel -->
             <section class="mb-12">
                 <h2 class="text-4xl font-bold section-title text-center mb-8">Decoración y Accesorios para Fiesta</h2>
                 <p class="text-lg text-center mb-10 max-w-2xl mx-auto">
                     Además de nuestras piñatas, te ofrecemos una variedad de globos para complementar tu celebración, de alta calidad y fabricados por Feng Che® Windmill Balloon:
                 </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="carousel-container">
+                    <div class="carousel-slide" id="globos-carousel-slide">
+                        <img src="https://placehold.co/800x450/ffc0cb/000?text=Globos+Mate" alt="Globos de Color Mate">
+                        <img src="https://placehold.co/800x450/ffebcd/000?text=Globos+Perla" alt="Globos de Color Perla">
+                        <img src="https://placehold.co/800x450/d4a7b5/000?text=Globos+Retro" alt="Globos Retro">
+                        <img src="https://placehold.co/800x450/c5e1a5/000?text=Otros+Globos" alt="Otros Tipos de Globos">
+                        <img src="https://placehold.co/800x450/b3e5fc/000?text=Accesorios+Globos" alt="Accesorios para Globos">
+                    </div>
+                    <button class="carousel-button prev" onclick="moveSlide('globos-carousel-slide', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveSlide('globos-carousel-slide', 1)">&#10095;</button>
+                </div>
+
+                <!-- Contenido adicional de globos y accesorios (sin carrusel, como estaba antes) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
                     <!-- Tarjeta: Globos de Color Mate -->
                     <div class="card-bg rounded-lg shadow-lg p-6">
                         <h3 class="text-2xl font-semibold mb-4 text-pink-700">Globos de Color Mate</h3>
@@ -164,8 +217,6 @@
                             <li>Negro (S18)</li>
                             <li>Blanco (S13)</li>
                         </ul>
-                        <!-- Marcador de posición para imagen de Globos Mate - reemplaza con URL real si la tienes -->
-                        <img src="https://placehold.co/400x200/ffc0cb/000?text=Globos+Mate" alt="Globos de Color Mate" class="mt-4 rounded-md border border-pink">
                     </div>
 
                     <!-- Tarjeta: Globos de Color Perla -->
@@ -180,8 +231,6 @@
                             <li>Azul Claro (M22)</li>
                             <li>Plata (M36)</li>
                         </ul>
-                        <!-- Marcador de posición para imagen de Globos Perla - reemplaza con URL real si la tienes -->
-                        <img src="https://placehold.co/400x200/ffebcd/000?text=Globos+Perla" alt="Globos de Color Perla" class="mt-4 rounded-md border border-pink">
                     </div>
 
                     <!-- Tarjeta: Globos Retro -->
@@ -207,8 +256,6 @@
                             <li>Fucsia Cristal (305)</li>
                             <li>Chocolate Cristal (306)</li>
                         </ul>
-                        <!-- Marcador de posición para imagen de Globos Retro - reemplaza con URL real si la tienes -->
-                        <img src="https://placehold.co/400x200/d4a7b5/000?text=Globos+Retro" alt="Globos Retro" class="mt-4 rounded-md border border-pink">
                     </div>
 
                     <!-- Tarjeta: Otros Tipos de Globos -->
@@ -231,8 +278,6 @@
                             <li>Globos de Aluminio (Foil)</li>
                             <li>Globos Bobo LED</li>
                         </ul>
-                        <!-- Marcador de posición para imagen de Otros Globos - reemplaza con URL real si la tienes -->
-                        <img src="https://placehold.co/400x200/c5e1a5/000?text=Otros+Globos" alt="Otros Tipos de Globos" class="mt-4 rounded-md border border-pink">
                     </div>
 
                     <!-- Tarjeta: Accesorios para Globos -->
@@ -247,8 +292,6 @@
                             <li>Bombas eléctricas y manuales</li>
                             <li>Nudadores</li>
                         </ul>
-                        <!-- Marcador de posición para imagen de Accesorios Globos - reemplaza con URL real si la tienes -->
-                        <img src="https://placehold.co/600x200/b3e5fc/000?text=Accesorios+Globos" alt="Accesorios para Globos" class="mt-4 rounded-md border border-pink">
                     </div>
                 </div>
             </section>
@@ -315,12 +358,11 @@
         <!-- Botón de Volver Arriba -->
         <button onclick="topFunction()" id="scrollTopBtn" title="Volver Arriba">↑</button>
 
-        <!-- Script para el botón de Volver Arriba -->
+        <!-- Script para el botón de Volver Arriba y Carrusel -->
         <script>
-            // Obtener el botón
+            // Script para el botón de Volver Arriba
             let mybutton = document.getElementById("scrollTopBtn");
 
-            // Cuando el usuario se desplaza 20px hacia abajo desde la parte superior del documento, muestra el botón
             window.onscroll = function() {scrollFunction()};
 
             function scrollFunction() {
@@ -331,11 +373,56 @@
                 }
             }
 
-            // Cuando el usuario hace clic en el botón, se desplaza hacia la parte superior del documento
             function topFunction() {
                 document.body.scrollTop = 0; // Para Safari
                 document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
             }
+
+            // Script para el carrusel
+            const carouselIndices = {};
+
+            function moveSlide(carouselId, direction) {
+                const slide = document.getElementById(carouselId);
+                if (!slide) {
+                    console.error(`Carrusel con ID "${carouselId}" no encontrado.`);
+                    return;
+                }
+
+                const images = slide.querySelectorAll('img');
+                const totalImages = images.length;
+
+                if (carouselIndices[carouselId] === undefined) {
+                    carouselIndices[carouselId] = 0;
+                }
+
+                let currentIndex = carouselIndices[carouselId];
+
+                currentIndex += direction;
+
+                if (currentIndex < 0) {
+                    currentIndex = totalImages - 1;
+                } else if (currentIndex >= totalImages) {
+                    currentIndex = 0;
+                }
+
+                carouselIndices[carouselId] = currentIndex;
+
+                const offset = -currentIndex * 100;
+                slide.style.transform = `translateX(${offset}%)`;
+            }
+
+            // Opcional: Auto-reproducción del carrusel
+            /*
+            document.addEventListener('DOMContentLoaded', () => {
+                setInterval(() => {
+                    moveSlide('pinata-carousel-slide', 1);
+                }, 5000); // Cambia de imagen cada 5 segundos
+
+                setInterval(() => {
+                    moveSlide('globos-carousel-slide', 1);
+                }, 7000); // Cambia de imagen cada 7 segundos
+            });
+            */
         </script>
     </div>
 </body>
