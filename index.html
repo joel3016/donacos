@@ -69,7 +69,7 @@
         .carousel-container {
             position: relative;
             max-width: 800px; /* Ancho máximo del carrusel, ajustado para el diseño de tarjetas */
-            height: 400px; /* Altura fija para el carrusel, aumentada para abarcar más la imagen */
+            height: 450px; /* Altura fija para el carrusel, AUMENTADA para abarcar más la imagen */
             margin: 40px auto;
             overflow: hidden; /* Oculta las imágenes fuera de vista */
             border-radius: 12px; /* Bordes redondeados */
@@ -89,11 +89,10 @@
             width: 100%; /* Cada imagen ocupa todo el ancho del carrusel */
             min-width: 100%; /* Asegura que la imagen siempre ocupe el 100% del ancho del slide */
             height: 100%; /* Cada imagen ocupa toda la altura del carrusel */
-            object-fit: cover; /* Recorta la imagen para que abarque todo el cuadro, manteniendo la proporción */
-            border-radius: 10px; /* Bordes redondeados para las imágenes */
-            padding: 5px; /* Pequeño padding interno para el borde visual */
+            object-fit: contain; /* CAMBIADO: Recorta la imagen para que abarque todo el cuadro, manteniendo la proporción */
             background-color: #fff; /* Fondo blanco para el padding */
             box-sizing: border-box; /* Incluye padding en el ancho/alto */
+            /* Eliminado border-radius y padding directo para que object-fit: contain funcione mejor sin bordes internos */
         }
 
         .carousel-button {
