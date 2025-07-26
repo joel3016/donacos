@@ -1,4 +1,4 @@
-       <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -69,7 +69,7 @@
         .carousel-container {
             position: relative;
             max-width: 800px; /* Ancho máximo del carrusel, ajustado para el diseño de tarjetas */
-            height: 300px; /* Altura fija para el carrusel */
+            height: 400px; /* Altura fija para el carrusel, aumentada para abarcar más la imagen */
             margin: 40px auto;
             overflow: hidden; /* Oculta las imágenes fuera de vista */
             border-radius: 12px; /* Bordes redondeados */
@@ -87,8 +87,9 @@
         .carousel-slide img {
             flex-shrink: 0; /* Evita que las imágenes se encojan */
             width: 100%; /* Cada imagen ocupa todo el ancho del carrusel */
+            min-width: 100%; /* Asegura que la imagen siempre ocupe el 100% del ancho del slide */
             height: 100%; /* Cada imagen ocupa toda la altura del carrusel */
-            object-fit: cover; /* Recorta la imagen para que abarque todo el cuadro */
+            object-fit: cover; /* Recorta la imagen para que abarque todo el cuadro, manteniendo la proporción */
             border-radius: 10px; /* Bordes redondeados para las imágenes */
             padding: 5px; /* Pequeño padding interno para el borde visual */
             background-color: #fff; /* Fondo blanco para el padding */
@@ -127,7 +128,7 @@
         /* Responsive adjustments for carousel */
         @media (max-width: 768px) {
             .carousel-container {
-                height: 250px; /* Altura más pequeña en móviles */
+                height: 350px; /* Altura más pequeña en móviles */
             }
             .carousel-button {
                 padding: 8px 12px;
@@ -137,7 +138,7 @@
 
         @media (max-width: 480px) {
             .carousel-container {
-                height: 200px; /* Altura aún más pequeña en móviles muy pequeños */
+                height: 300px; /* Altura aún más pequeña en móviles muy pequeños */
             }
         }
     </style>
